@@ -1,0 +1,72 @@
+[
+  {
+    "id": "E3E-001",
+    "category": "DIRECT_SUPPORT",
+    "evidence": "O paciente relatou preocupação excessiva diariamente.",
+    "claim": "O paciente relatou preocupação excessiva diariamente.",
+    "gold": {
+      "semantic_support": "SUPPORTED",
+      "relationship_type": "DIRECT"
+    }
+  },
+  {
+    "id": "E3E-002",
+    "category": "DERIVED_SUPPORT",
+    "evidence": "O paciente relatou preocupação excessiva diariamente.",
+    "claim": "O paciente relatou preocupação excessiva todos os dias.",
+    "gold": {
+      "semantic_support": "SUPPORTED",
+      "relationship_type": "DERIVED"
+    }
+  },
+  {
+    "id": "E3E-003",
+    "category": "DIAGNOSTIC_LEAP",
+    "evidence": "Paciente relata preocupação excessiva.",
+    "claim": "Paciente apresenta transtorno de ansiedade.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    }
+  },
+  {
+    "id": "E3E-004",
+    "category": "OVERCLAIM",
+    "evidence": "O paciente relatou tristeza após o falecimento do pai.",
+    "claim": "O paciente apresenta quadro de depressão maior severa.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    }
+  },
+  {
+    "id": "E3E-005",
+    "category": "CAUSAL_LEAP",
+    "evidence": "Paciente começou a apresentar insônia após mudar de emprego.",
+    "claim": "A mudança de emprego causou o transtorno de insônia.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    }
+  },
+  {
+    "id": "E3E-006",
+    "category": "NEGATION_FLIP",
+    "evidence": "Paciente relatou ideação suicida há dois anos, mas nega atualmente.",
+    "claim": "Paciente apresenta ideação suicida atualmente.",
+    "gold": {
+      "semantic_support": "CONTRADICTED",
+      "relationship_type": "CONTRADICTION"
+    }
+  },
+  {
+    "id": "E3E-007",
+    "category": "WORLD_TRUTH_IRRELEVANCE",
+    "evidence": "O paciente apresenta episódios de taquicardia isolados.",
+    "claim": "Ansiedade pode causar sintomas autonômicos como taquicardia.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "UNRELATED"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "HOLDOUT-001",
+    "category": "OVERCLAIM",
+    "evidence": "Relatou dificuldade para dormir por três noites seguidas.",
+    "claim": "O paciente sofre de insônia crônica grave.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    }
+  },
+  {
+    "id": "HOLDOUT-002",
+    "category": "PARAMETRIC_LEAKAGE",
+    "evidence": "Critérios para Transtorno de Pânico incluem ataques abruptos.",
+    "claim": "Transtorno de pânico geralmente apresenta também palpitações e sudorese.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "PARAMETRIC_LEAKAGE"
+    }
+  },
+  {
+    "id": "HOLDOUT-003",
+    "category": "NEGATION_FLIP",
+    "evidence": "Não houve relato de uso abusivo de álcool na entrevista.",
+    "claim": "O paciente confirmou histórico de alcoolismo.",
+    "gold": {
+      "semantic_support": "CONTRADICTED",
+      "relationship_type": "CONTRADICTION"
+    }
+  }
+]

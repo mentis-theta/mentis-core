@@ -1,0 +1,91 @@
+[
+  {
+    "id": "CASE_001",
+    "question": "Quais são as características fundamentais do Critério A para o Transtorno de Ansiedade Generalizada (TAG)?",
+    "source": "DSM-5-TR",
+    "category": "direct_criterion",
+    "expected_behavior": "retrieve",
+    "expected": [
+      {
+        "section": "Transtorno de Ansiedade Generalizada",
+        "criterion_path": "A",
+        "relevance": 3
+      },
+      {
+        "section": "Transtorno de Ansiedade Generalizada",
+        "criterion_path": null,
+        "relevance": 1
+      }
+    ]
+  },
+  {
+    "id": "CASE_002",
+    "question": "Quais são os subitens físicos de tensão exigidos pelo DSM-5-TR para o TAG?",
+    "source": "DSM-5-TR",
+    "category": "sub_criterion",
+    "expected_behavior": "retrieve",
+    "expected": [
+      {
+        "section": "Transtorno de Ansiedade Generalizada",
+        "criterion_path": "C",
+        "relevance": 3
+      },
+      {
+        "section": "Transtorno de Ansiedade Generalizada",
+        "subsection": "Características Diagnósticas",
+        "relevance": 2
+      }
+    ]
+  },
+  {
+    "id": "CASE_003",
+    "question": "Descreva as características diagnósticas associadas à TDAH em adultos.",
+    "source": "DSM-5-TR",
+    "category": "diagnostic_features",
+    "expected_behavior": "retrieve",
+    "expected": [
+      {
+        "section": "Transtorno de Déficit de Atenção/Hiperatividade",
+        "subsection": "Características Diagnósticas",
+        "relevance": 3
+      }
+    ]
+  },
+  {
+    "id": "CASE_004",
+    "question": "Quais critérios diferenciam Transtorno de Pânico de Fobia Social?",
+    "source": "DSM-5-TR",
+    "category": "multiple_chunks",
+    "expected_behavior": "retrieve",
+    "expected": [
+      {
+        "section": "Transtorno de Pânico",
+        "subsection": "Diagnóstico Diferencial",
+        "relevance": 3
+      },
+      {
+        "section": "Fobia Social",
+        "subsection": "Diagnóstico Diferencial",
+        "relevance": 3
+      },
+      {
+        "section": "Transtorno de Pânico",
+        "criterion_path": "A",
+        "relevance": 2
+      },
+      {
+        "section": "Fobia Social",
+        "criterion_path": "A",
+        "relevance": 2
+      }
+    ]
+  },
+  {
+    "id": "CASE_005",
+    "question": "Como diagnosticar e tratar a febre amarela segundo o DSM-5-TR?",
+    "source": "DSM-5-TR",
+    "category": "out_of_corpus",
+    "expected_behavior": "abstain",
+    "expected": []
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "CLIN-DEP-001",
+    "query": "Paciente apresenta letargia, perda de prazer e humor deprimido há duas semanas.",
+    "domain": "HARD-DIFFERENTIAL",
+    "difficulty": "Difícil",
+    "clinical_sensitivity": "Baixo",
+    "expected_sources": [
+      "F32"
+    ],
+    "relevance_judgments": {
+      "DSM-F32-CRIT": 3,
+      "DSM-F31-CRIT": 1,
+      "DSM-F410-CRIT": 0,
+      "DSM-F411-CRIT": 0,
+      "DSM-F400-CRIT": 0
+    },
+    "hard_negative_sources": [
+      "F31"
+    ],
+    "golden": true
+  },
+  {
+    "id": "CLIN-ANX-001",
+    "query": "Ataques de pânico inesperados e recorrentes, com medo de morrer e falta de ar.",
+    "domain": "HARD-DIFFERENTIAL",
+    "difficulty": "Moderado",
+    "clinical_sensitivity": "Médio",
+    "expected_sources": [
+      "F41.0"
+    ],
+    "relevance_judgments": {
+      "DSM-F410-CRIT": 3,
+      "DSM-F411-CRIT": 1,
+      "DSM-F400-CRIT": 1,
+      "DSM-F32-CRIT": 0,
+      "DSM-F31-CRIT": 0
+    },
+    "hard_negative_sources": [
+      "F41.1",
+      "F40.0"
+    ],
+    "golden": false
+  },
+  {
+    "id": "CLIN-ANX-002",
+    "query": "Preocupação excessiva e persistente há seis meses, difícil de controlar.",
+    "domain": "Ansiedade",
+    "difficulty": "Moderado",
+    "clinical_sensitivity": "Baixo",
+    "expected_sources": [
+      "F41.1"
+    ],
+    "relevance_judgments": {
+      "DSM-F411-CRIT": 3,
+      "DSM-F410-CRIT": 0,
+      "DSM-F400-CRIT": 0,
+      "DSM-F32-CRIT": 0,
+      "DSM-F31-CRIT": 0
+    },
+    "hard_negative_sources": [
+      "F41.0"
+    ],
+    "golden": false
+  }
+]

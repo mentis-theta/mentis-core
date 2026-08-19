@@ -1,0 +1,6 @@
+{
+  "name": "Mentis",
+  "description": "Uma aplicação desktop nativa para clínicas de psicologia. Permite gerenciar perfis de pacientes, registrar sessões com anotações ricas, analisar conteúdo com NLP para sugerir tags clínicas, e visualizar relatórios de evolução.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

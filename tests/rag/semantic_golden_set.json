@@ -1,0 +1,123 @@
+[
+  {
+    "id": "E3E-001",
+    "category": "DIRECT_SUPPORT",
+    "evidence": "O paciente relatou preocupação excessiva diariamente.",
+    "claim": "O paciente relatou preocupação excessiva diariamente.",
+    "gold": {
+      "semantic_support": "SUPPORTED",
+      "relationship_type": "DIRECT"
+    },
+    "rationale": "A evidência afirma exatamente a mesma frase da claim, constituindo suporte direto."
+  },
+  {
+    "id": "E3E-002",
+    "category": "DERIVED_SUPPORT",
+    "evidence": "O paciente relatou preocupação excessiva diariamente.",
+    "claim": "O paciente relatou preocupação excessiva todos os dias.",
+    "gold": {
+      "semantic_support": "SUPPORTED",
+      "relationship_type": "DERIVED"
+    },
+    "rationale": "A claim substitui 'diariamente' por 'todos os dias', mantendo o significado sem adicionar fatos clínicos."
+  },
+  {
+    "id": "E3E-003",
+    "category": "DERIVED_SUPPORT",
+    "evidence": "Paciente negou ideação suicida.",
+    "claim": "Não houve relato de ideação suicida.",
+    "gold": {
+      "semantic_support": "SUPPORTED",
+      "relationship_type": "DERIVED"
+    },
+    "rationale": "Negar uma ideação equivale logicamente à ausência de relato sobre a mesma."
+  },
+  {
+    "id": "E3E-004",
+    "category": "DIAGNOSTIC_LEAP",
+    "evidence": "Paciente relata preocupação excessiva.",
+    "claim": "Paciente apresenta transtorno de ansiedade.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    },
+    "rationale": "A evidência descreve um sintoma (preocupação), mas a claim faz um salto para inferir um diagnóstico (transtorno)."
+  },
+  {
+    "id": "E3E-005",
+    "category": "DIAGNOSTIC_LEAP",
+    "evidence": "Os critérios diagnósticos para TAG incluem inquietação, fadiga e dificuldade de concentração.",
+    "claim": "O paciente cumpre os critérios para TAG.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    },
+    "rationale": "A evidência apenas cita o manual diagnóstico; não afirma que o paciente em questão possui os sintomas."
+  },
+  {
+    "id": "E3E-006",
+    "category": "CONTRADICTION",
+    "evidence": "Paciente nega insônia nas últimas semanas.",
+    "claim": "Paciente apresenta quadro agudo de insônia.",
+    "gold": {
+      "semantic_support": "CONTRADICTED",
+      "relationship_type": "CONTRADICTION"
+    },
+    "rationale": "A evidência nega frontalmente a afirmação da claim."
+  },
+  {
+    "id": "E3E-007",
+    "category": "PARTIAL_SUPPORT",
+    "evidence": "Paciente relatou episódios de insônia.",
+    "claim": "Paciente apresenta insônia grave persistente e diária.",
+    "gold": {
+      "semantic_support": "PARTIALLY_SUPPORTED",
+      "relationship_type": "PARTIAL_SUPPORT"
+    },
+    "rationale": "A evidência apoia a existência de insônia, mas não apoia as qualificações 'grave', 'persistente' e 'diária'."
+  },
+  {
+    "id": "E3E-008",
+    "category": "PARAMETRIC_LEAKAGE",
+    "evidence": "Critérios para Transtorno de Pânico incluem ataques abruptos.",
+    "claim": "Transtorno de pânico geralmente apresenta também palpitações e sudorese.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "PARAMETRIC_LEAKAGE"
+    },
+    "rationale": "A claim cita sintomas clinicamente corretos, mas ausentes do texto fornecido."
+  },
+  {
+    "id": "E3E-009",
+    "category": "UNRELATED",
+    "evidence": "A sessão transcorreu de forma tranquila, sem alterações de humor.",
+    "claim": "O paciente faz uso de fluoxetina 20mg.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "UNRELATED"
+    },
+    "rationale": "Não há relação alguma entre a evidência descritiva e a afirmação sobre medicação."
+  },
+  {
+    "id": "E3E-010",
+    "category": "PARTIAL_SUPPORT",
+    "evidence": "Paciente tem diagnóstico de TDAH.",
+    "claim": "Paciente tem diagnóstico de TDAH e faz uso regular de ritalina.",
+    "gold": {
+      "semantic_support": "PARTIALLY_SUPPORTED",
+      "relationship_type": "PARTIAL_SUPPORT"
+    },
+    "rationale": "A evidência sustenta a parte do diagnóstico, mas não sustenta a alegação de uso de medicamento."
+  },
+  {
+    "id": "E3E-011",
+    "category": "DERIVED_SUPPORT",
+    "evidence": "Paciente apresentou sintomas X, Y e Z.",
+    "claim": "O quadro é compatível com a presença de X, Y e Z.",
+    "gold": {
+      "semantic_support": "SUPPORTED",
+      "relationship_type": "DERIVED"
+    },
+    "rationale": "A transformação de 'apresentou' para 'compatível com a presença' não introduz saltos clínicos."
+  }
+]

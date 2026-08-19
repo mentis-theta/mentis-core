@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mentis">
+  <meta name="description" content="Mentis - Plataforma Inteligente para Terapeutas e Portal do Paciente. Gerencie sua prática clínica com IA.">
+
+  <title>Mentis - Clínica Inteligente</title>
+
+  <link rel="preload" href="/index.css" as="style">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+
+
+
+
+  <style>
+    /* Melhoria na rolagem para mobile/tablet (Momentum Scrolling) */
+    html,
+    body {
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-y: none;
+      /* Previne o "bounce" da página inteira no topo/fundo */
+    }
+
+    /* Custom Scrollbars - Visíveis mas elegantes */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      /* Altura para scroll horizontal */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      /* slate-300 */
+      border-radius: 10px;
+      border: 2px solid transparent;
+      /* Cria um padding visual */
+      background-clip: content-box;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #475569;
+      /* slate-600 */
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+      /* slate-400 */
+    }
+
+    /* Utilitário para forçar visibilidade do scroll */
+    .force-scroll-x {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Utilitário para Canvas do React Flow no Mobile */
+    .touch-action-none {
+      touch-action: none;
+    }
+
+    /* React Flow Customization for Dark Mode */
+    .dark .react-flow__node {
+      border-color: #475569;
+      background: #1e293b;
+      color: #e2e8f0;
+    }
+
+    .dark .react-flow__handle {
+      background: #94a3b8;
+    }
+
+    .dark .react-flow__edge-path {
+      stroke: #94a3b8;
+    }
+
+    .dark .react-flow__controls button {
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      fill: #e2e8f0;
+    }
+
+    .dark .react-flow__controls button:hover {
+      background: #334155;
+    }
+
+    /* Missing Utilities from CSS */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .mask-linear-fade {
+      /* Fallback for safety */
+      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.9.0",
+    "recharts": "https://esm.sh/recharts@^2.12.7",
+    "crypto-js": "https://esm.sh/crypto-js@4.2.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@3.5.29",
+    "date-fns": "https://esm.sh/date-fns@3.3.1",
+    "date-fns/locale": "https://esm.sh/date-fns@3.3.1/locale",
+    "reactflow": "https://esm.sh/reactflow@11.10.4",
+    "date-fns/": "https://aistudiocdn.com/date-fns@^4.1.0/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-900 transition-colors duration-200">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

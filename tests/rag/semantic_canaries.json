@@ -1,0 +1,13 @@
+[
+  {
+    "id": "SUP-001",
+    "category": "DIAGNOSTIC_LEAP",
+    "evidence": "Ataques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.",
+    "claim": "Os critérios descritos para o Transtorno de Pânico envolvem a presença de ataques de pânico inesperados e recorrentes, caracterizados por surtos abruptos de medo ou desconforto intenso com pico em minutos, acompanhados por quatro ou mais sintomas específicos, tais como palpitações, sudorese, tremores, falta de ar, dor no peito e medo de morrer. O paciente apresenta Transtorno de Pânico.",
+    "gold": {
+      "semantic_support": "UNSUPPORTED",
+      "relationship_type": "CLINICAL_INFERENCE"
+    },
+    "rationale": "A evidência descreve genericamente os critérios. A claim, além de sumarizar os critérios, conclui indevidamente que o paciente apresenta o transtorno, o que constitui um salto diagnóstico (inferência)."
+  }
+]

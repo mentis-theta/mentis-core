@@ -1,0 +1,288 @@
+{
+  "calibration": {
+    "audit": [
+      {
+        "case_id": "E3E-001",
+        "category": "DIRECT_SUPPORT",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:35:08.299Z"
+      },
+      {
+        "case_id": "E3E-002",
+        "category": "DERIVED_SUPPORT",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:35:35.711Z"
+      },
+      {
+        "case_id": "E3E-003",
+        "category": "DIAGNOSTIC_LEAP",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:36:03.152Z"
+      },
+      {
+        "case_id": "E3E-004",
+        "category": "OVERCLAIM",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:36:30.632Z"
+      },
+      {
+        "case_id": "E3E-005",
+        "category": "CAUSAL_LEAP",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:36:58.051Z"
+      },
+      {
+        "case_id": "E3E-006",
+        "category": "NEGATION_FLIP",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:37:25.553Z"
+      },
+      {
+        "case_id": "E3E-007",
+        "category": "WORLD_TRUTH_IRRELEVANCE",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:37:52.970Z"
+      }
+    ],
+    "metrics": {
+      "coverage": 0,
+      "accuracy": 0,
+      "falseSupport": 0,
+      "falseUnsupported": 0,
+      "exactInterRunAgreement": 0
+    }
+  },
+  "holdout": {
+    "audit": [
+      {
+        "case_id": "HOLDOUT-001",
+        "category": "OVERCLAIM",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:38:20.404Z"
+      },
+      {
+        "case_id": "HOLDOUT-002",
+        "category": "PARAMETRIC_LEAKAGE",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:38:47.880Z"
+      },
+      {
+        "case_id": "HOLDOUT-003",
+        "category": "NEGATION_FLIP",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:39:15.328Z"
+      }
+    ],
+    "metrics": {
+      "coverage": 0,
+      "accuracy": 0,
+      "falseSupport": 0,
+      "falseUnsupported": 0,
+      "exactInterRunAgreement": 0
+    }
+  },
+  "canaries": {
+    "audit": [
+      {
+        "case_id": "SUP-001",
+        "category": "DIAGNOSTIC_LEAP",
+        "runs": [
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          },
+          {
+            "status": "NOT_EVALUATED_API",
+            "rationale": "API Error: Not Found"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "evaluator_version": "v1.0",
+        "dataset_version": "v1.0",
+        "temperature": 0,
+        "timestamp": "2026-08-18T13:39:42.757Z"
+      }
+    ],
+    "metrics": {
+      "coverage": 0,
+      "accuracy": 0,
+      "falseSupport": 0,
+      "falseUnsupported": 0,
+      "exactInterRunAgreement": 0
+    }
+  }
+}

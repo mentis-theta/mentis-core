@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /portal/
+Disallow: /api/
+Allow: /
+
+Sitemap: https://mentis.com.br/sitemap.xml

@@ -1,0 +1,1219 @@
+[
+  {
+    "case_id": "E2E-SUP-001",
+    "type": "SUPPORTED",
+    "query": "Quais são os critérios para o Transtorno de Pânico?",
+    "expected_sources": [
+      "DSM-F410-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 1,
+          "similarity": 0.718633343399586
+        },
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 2,
+          "similarity": 0.671730283091551
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 3,
+          "similarity": 0.62539963807462
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 4,
+          "similarity": 0.624169583893494
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 5,
+          "similarity": 0.623507759842574
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Os critérios descritos para o Transtorno de Pânico envolvem a presença de ataques de pânico inesperados e recorrentes, caracterizados por surtos abruptos de medo ou desconforto intenso com pico em minutos, acompanhados por quatro ou mais sintomas específicos, tais como palpitações, sudorese, tremores, falta de ar, dor no peito e medo de morrer.",
+          "evidence_status": "partially_supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F410-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Ataques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer."
+            }
+          ],
+          "limitation": "O contexto clínico fornecido descreve apenas as características de um ataque de pânico e a necessidade de recorrência, mas não detalha todos os critérios diagnósticos completos do Transtorno de Pânico, como a preocupação persistente com novos ataques ou alterações comportamentais pelo período mínimo de um mês."
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Critérios temporais e comportamentais adicionais para o Transtorno de Pânico",
+          "reason": "O contexto não possui informações sobre as consequências pós-ataque exigidas para o diagnóstico de Transtorno de Pânico, como a preocupação persistente com novos ataques ou a mudança desadaptativa no comportamento por pelo menos um mês."
+        }
+      ],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 0,
+        "partially_supported_claims": 1,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Os critérios descritos para o Transtorno de Pânico envolvem a presença de ataques de pânico inesperados e recorrentes, caracterizados por surtos abruptos de medo ou desconforto intenso com pico em minutos, acompanhados por quatro ou mais sintomas específicos, tais como palpitações, sudorese, tremores, falta de ar, dor no peito e medo de morrer.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-SUP-002",
+    "type": "SUPPORTED",
+    "query": "Descreva a Agorafobia.",
+    "expected_sources": [
+      "DSM-F400-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.642637069696885
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 2,
+          "similarity": 0.62605972600697
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 3,
+          "similarity": 0.613725198951405
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 4,
+          "similarity": 0.590172542898797
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 5,
+          "similarity": 0.586443585561409
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Os critérios diagnósticos associados ao código F40.0 envolvem medo ou ansiedade acentuados acerca de duas ou mais de cinco situações específicas, incluindo o uso de transporte público, permanecer em espaços abertos ou fechados, em filas ou multidões, ou sair de casa sozinho.",
+          "evidence_status": "partially_supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F400-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Medo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho."
+            }
+          ],
+          "limitation": "O termo 'Agorafobia' não é explicitamente mencionado no texto do chunk correspondente ao código F40.0."
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Definição nominal do termo 'Agorafobia'",
+          "reason": "O termo literal 'Agorafobia' não está presente em nenhum dos chunks de conteúdo fornecidos na base de dados."
+        }
+      ],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 0,
+        "partially_supported_claims": 1,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Os critérios diagnósticos associados ao código F40.0 envolvem medo ou ansiedade acentuados acerca de duas ou mais de cinco situações específicas, incluindo o uso de transporte público, permanecer em espaços abertos ou fechados, em filas ou multidões, ou sair de casa sozinho.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-SUP-003",
+    "type": "SUPPORTED",
+    "query": "Quanto tempo dura um episódio maníaco segundo o DSM?",
+    "expected_sources": [
+      "DSM-F31-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.768998687028594
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 2,
+          "similarity": 0.665290037955046
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 3,
+          "similarity": 0.622008196474597
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 4,
+          "similarity": 0.601312178412443
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 5,
+          "similarity": 0.588273034383014
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Segundo o DSM-5-TR, um episódio maníaco dura pelo menos uma semana, estando presente na maior parte do dia, quase todos os dias.",
+          "evidence_status": "supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F31-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Critérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias."
+            }
+          ]
+        }
+      ],
+      "abstentions": [],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 1,
+        "partially_supported_claims": 0,
+        "abstained_claims": 0
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Segundo o DSM-5-TR, um episódio maníaco dura pelo menos uma semana, estando presente na maior parte do dia, quase todos os dias.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-SUP-004",
+    "type": "SUPPORTED",
+    "query": "Sintomas do Episódio Depressivo Maior.",
+    "expected_sources": [
+      "DSM-F32-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.766754424603381
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 2,
+          "similarity": 0.7530559897423
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 3,
+          "similarity": 0.668530305782053
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 4,
+          "similarity": 0.644192255168002
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 5,
+          "similarity": 0.624392278311337
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Para os critérios do código F32, devem estar presentes cinco ou mais sintomas durante o mesmo período de duas semanas, representando uma mudança no funcionamento anterior, sendo pelo menos um deles humor deprimido ou perda de interesse ou prazer.",
+          "evidence_status": "partially_supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F32-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Cinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer."
+            }
+          ],
+          "limitation": "O contexto clínico descreve as diretrizes para a categoria F32, mas não utiliza explicitamente o termo nominal 'Episódio Depressivo Maior', além de omitir quais são os outros sintomas que completam o grupo de cinco ou mais necessários para o critério."
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Lista completa dos sintomas específicos do Episódio Depressivo Maior",
+          "reason": "Os chunks fornecidos não apresentam a totalidade dos sintomas que compõem o critério diagnóstico, citando textualmente apenas humor deprimido e perda de interesse ou prazer."
+        },
+        {
+          "topic": "Definição formal e nomenclatura exata de 'Episódio Depressivo Maior'",
+          "reason": "A expressão literal 'Episódio Depressivo Maior' não está presente em nenhum dos fragmentos do contexto recuperado."
+        }
+      ],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 0,
+        "partially_supported_claims": 1,
+        "abstained_claims": 2
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Para os critérios do código F32, devem estar presentes cinco ou mais sintomas durante o mesmo período de duas semanas, representando uma mudança no funcionamento anterior, sendo pelo menos um deles humor deprimido ou perda de interesse ou prazer.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-SUP-005",
+    "type": "SUPPORTED",
+    "query": "Qual é o tempo mínimo para TAG?",
+    "expected_sources": [
+      "DSM-F411-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 1,
+          "similarity": 0.612822037553144
+        },
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 2,
+          "similarity": 0.606397946786214
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 3,
+          "similarity": 0.559597523104482
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 4,
+          "similarity": 0.542864349060631
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 5,
+          "similarity": 0.542742436259084
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "O tempo mínimo definido para a condição de ansiedade e preocupação excessivas descrita sob o código F41.1 é de pelo menos seis meses.",
+          "evidence_status": "partially_supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F411-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Ansiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades."
+            }
+          ],
+          "limitation": "O contexto descreve os critérios temporais para a categoria diagnóstica de código F41.1 (ansiedade e preocupação excessivas), porém não menciona explicitamente a sigla 'TAG' ou o termo por extenso 'Transtorno de Ansiedade Generalizada'."
+        }
+      ],
+      "abstentions": [],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 0,
+        "partially_supported_claims": 1,
+        "abstained_claims": 0
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "O tempo mínimo definido para a condição de ansiedade e preocupação excessivas descrita sob o código F41.1 é de pelo menos seis meses.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-ABS-001",
+    "type": "MUST_ABSTAIN",
+    "query": "Paciente relata uso crônico de quetiapina e fluoxetina. Qual a meia-vida dessas medicações?",
+    "expected_sources": [],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.642510467248996
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 2,
+          "similarity": 0.632353487698429
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 3,
+          "similarity": 0.60810700703305
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 4,
+          "similarity": 0.596580510618204
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 5,
+          "similarity": 0.581554355349562
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>",
+    "generation": {
+      "evidence_chains": [],
+      "abstentions": [
+        {
+          "topic": "Meia-vida de quetiapina e fluoxetina",
+          "reason": "Os fragmentos de texto do contexto clínico fornecido tratam exclusivamente de critérios de diagnóstico para transtornos mentais do DSM-5-TR (episódio maníaco, episódio depressivo, agorafobia, transtorno de ansiedade generalizada e transtorno de pânico). Não há qualquer menção aos fármacos quetiapina e fluoxetina, nem às suas respectivas meias-vidas."
+        }
+      ],
+      "meta": {
+        "total_claims": 0,
+        "supported_claims": 0,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [],
+    "abstention": {
+      "expected": true,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-ABS-002",
+    "type": "MUST_ABSTAIN",
+    "query": "Qual é a dosagem recomendada de Ritalina para TDAH adulto?",
+    "expected_sources": [],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.519957728370811
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 2,
+          "similarity": 0.516718303179236
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 3,
+          "similarity": 0.515919958329189
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 4,
+          "similarity": 0.515328424472874
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 5,
+          "similarity": 0.498854994773879
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>",
+    "generation": {
+      "evidence_chains": [],
+      "abstentions": [
+        {
+          "topic": "Dosagem recomendada de Ritalina para TDAH adulto",
+          "reason": "O contexto fornecido contém exclusivamente critérios diagnósticos para Episódio Maníaco, Ataque de Pânico, Ansiedade e Preocupação Excessivas, Agorafobia e Episódio Depressivo. Não há informações sobre TDAH, Ritalina ou recomendações de dosagem terapêutica."
+        }
+      ],
+      "meta": {
+        "total_claims": 0,
+        "supported_claims": 0,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [],
+    "abstention": {
+      "expected": true,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-ABS-003",
+    "type": "MUST_ABSTAIN",
+    "query": "Como tratar Transtorno de Personalidade Borderline?",
+    "expected_sources": [],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.576418791795947
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 2,
+          "similarity": 0.56572592258457
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 3,
+          "similarity": 0.550629891361324
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 4,
+          "similarity": 0.544997394084965
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 5,
+          "similarity": 0.533734162529063
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>",
+    "generation": {
+      "evidence_chains": [],
+      "abstentions": [
+        {
+          "topic": "Tratamento do Transtorno de Personalidade Borderline",
+          "reason": "O contexto fornecido contém exclusivamente critérios diagnósticos para Episódio Maníaco, Ansiedade e Preocupação Excessivas, Agorafobia, Ataque de Pânico e Episódio Depressivo, não contendo nenhuma informação sobre o diagnóstico ou tratamento do Transtorno de Personalidade Borderline."
+        }
+      ],
+      "meta": {
+        "total_claims": 0,
+        "supported_claims": 0,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [],
+    "abstention": {
+      "expected": true,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-ABS-004",
+    "type": "MUST_ABSTAIN",
+    "query": "Quais são os marcadores biológicos da Esquizofrenia?",
+    "expected_sources": [],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 1,
+          "similarity": 0.606789231300371
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 2,
+          "similarity": 0.59592488347365
+        },
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 3,
+          "similarity": 0.588740201737957
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 4,
+          "similarity": 0.560520935213845
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 5,
+          "similarity": 0.558970975569182
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>",
+    "generation": {
+      "evidence_chains": [],
+      "abstentions": [
+        {
+          "topic": "Marcadores biológicos da Esquizofrenia",
+          "reason": "Nenhum dos chunks fornecidos no contexto clínico contém informações sobre a Esquizofrenia ou seus marcadores biológicos."
+        }
+      ],
+      "meta": {
+        "total_claims": 0,
+        "supported_claims": 0,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [],
+    "abstention": {
+      "expected": true,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-ABS-005",
+    "type": "MUST_ABSTAIN",
+    "query": "Qual o CID da insônia crônica?",
+    "expected_sources": [],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.598691188977065
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 2,
+          "similarity": 0.580289109997003
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 3,
+          "similarity": 0.579854896085875
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 4,
+          "similarity": 0.550370471190527
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 5,
+          "similarity": 0.540255821989036
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>",
+    "generation": {
+      "evidence_chains": [],
+      "abstentions": [
+        {
+          "topic": "CID da insônia crônica",
+          "reason": "O contexto clínico fornecido não contém nenhuma informação sobre insônia crônica ou seu respectivo código CID."
+        }
+      ],
+      "meta": {
+        "total_claims": 0,
+        "supported_claims": 0,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [],
+    "abstention": {
+      "expected": true,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-HRD-001",
+    "type": "HARD_CONTRADICTORY",
+    "query": "O paciente não consegue sair de casa por medo de ter um ataque de pânico. É Agorafobia ou Transtorno de Pânico?",
+    "expected_sources": [
+      "DSM-F400-CRIT",
+      "DSM-F410-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 1,
+          "similarity": 0.742003653349128
+        },
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 2,
+          "similarity": 0.645825713248168
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 3,
+          "similarity": 0.623531885007603
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 4,
+          "similarity": 0.622340838167449
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 5,
+          "similarity": 0.583432105695069
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "O Transtorno de Pânico envolve ataques de pânico inesperados e recorrentes caracterizados por surto abrupto de medo ou desconforto intenso que atinge o pico em minutos.",
+          "evidence_status": "supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F410-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Ataques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer."
+            }
+          ]
+        },
+        {
+          "claim": "O comportamento do paciente de não conseguir sair de casa corresponde a uma das cinco situações listadas no critério de Agorafobia, que é 'Sair de casa sozinho'.",
+          "evidence_status": "partially_supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F400-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Medo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho."
+            }
+          ],
+          "limitation": "O diagnóstico de agorafobia requer medo ou ansiedade acentuados em duas ou mais das cinco situações listadas, enquanto o caso clínico relata apenas o sintoma correspondente a sair de casa sozinho."
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Diagnóstico diferencial definitivo entre Agorafobia e Transtorno de Pânico para o paciente apresentado",
+          "reason": "Os fragmentos de texto fornecidos trazem apenas critérios diagnósticos brutos e isolados das condições (F41.0 e F40.0), mas não contêm regras de exclusão mútua, comorbidade ou diretrizes diferenciais que possibilitem fechar um diagnóstico específico para o caso clínico apresentado."
+        }
+      ],
+      "meta": {
+        "total_claims": 2,
+        "supported_claims": 1,
+        "partially_supported_claims": 1,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "O Transtorno de Pânico envolve ataques de pânico inesperados e recorrentes caracterizados por surto abrupto de medo ou desconforto intenso que atinge o pico em minutos.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      },
+      {
+        "claim": "O comportamento do paciente de não conseguir sair de casa corresponde a uma das cinco situações listadas no critério de Agorafobia, que é 'Sair de casa sozinho'.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-HRD-002",
+    "type": "HARD_CONTRADICTORY",
+    "query": "Diferencie ansiedade generalizada de um ataque de pânico isolado.",
+    "expected_sources": [
+      "DSM-F411-CRIT",
+      "DSM-F410-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.703049266701894
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 2,
+          "similarity": 0.692060690645051
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 3,
+          "similarity": 0.685363810382147
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 4,
+          "similarity": 0.661225378999833
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 5,
+          "similarity": 0.625251322924775
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Um ataque de pânico é caracterizado por um surto abrupto de medo ou desconforto intenso que atinge o pico em minutos, acompanhado por sintomas físicos e cognitivos como palpitações, sudorese, tremores, falta de ar, dor no peito e medo de morrer.",
+          "evidence_status": "supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F410-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer."
+            }
+          ]
+        },
+        {
+          "claim": "A ansiedade generalizada é caracterizada por ansiedade e preocupação excessivas e persistentes que ocorrem na maioria dos dias por no mínimo seis meses, abrangendo diversos eventos ou atividades, sendo difícil para o indivíduo controlar tal preocupação.",
+          "evidence_status": "supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F411-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Ansiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação."
+            }
+          ]
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Diferenças no tratamento farmacológico e psicoterápico de ansiedade generalizada e ataque de pânico",
+          "reason": "O contexto clínico fornecido contém estritamente critérios diagnósticos do DSM-5-TR e não traz informações sobre intervenções terapêuticas, farmacológicas ou de manejo clínico."
+        },
+        {
+          "topic": "Etiologia, fatores de risco e fisiopatologia comparativa entre as duas condições",
+          "reason": "Não há dados na base de conhecimento sobre causas neurobiológicas, genéticas, fatores ambientais ou fisiopatologia de nenhuma das condições citadas."
+        }
+      ],
+      "meta": {
+        "total_claims": 2,
+        "supported_claims": 2,
+        "partially_supported_claims": 0,
+        "abstained_claims": 2
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Um ataque de pânico é caracterizado por um surto abrupto de medo ou desconforto intenso que atinge o pico em minutos, acompanhado por sintomas físicos e cognitivos como palpitações, sudorese, tremores, falta de ar, dor no peito e medo de morrer.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      },
+      {
+        "claim": "A ansiedade generalizada é caracterizada por ansiedade e preocupação excessivas e persistentes que ocorrem na maioria dos dias por no mínimo seis meses, abrangendo diversos eventos ou atividades, sendo difícil para o indivíduo controlar tal preocupação.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-HRD-003",
+    "type": "HARD_CONTRADICTORY",
+    "query": "Depressão maior sempre inclui risco de suicídio?",
+    "expected_sources": [
+      "DSM-F32-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.661925215950676
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 2,
+          "similarity": 0.63420930285232
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 3,
+          "similarity": 0.620347417613738
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 4,
+          "similarity": 0.593865341496593
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 5,
+          "similarity": 0.589938735362242
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>",
+    "generation": {
+      "evidence_chains": [],
+      "abstentions": [
+        {
+          "topic": "Relação entre depressão maior e risco de suicídio",
+          "reason": "O contexto clínico fornecido (chunks DSM-F31-CRIT, DSM-F32-CRIT, DSM-F410-CRIT, DSM-F400-CRIT, DSM-F411-CRIT) não menciona 'risco de suicídio' ou suicidabilidade em nenhuma de suas passagens, impossibilitando a confirmação de sua associação com a depressão maior."
+        }
+      ],
+      "meta": {
+        "total_claims": 0,
+        "supported_claims": 0,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-HRD-004",
+    "type": "HARD_CONTRADICTORY",
+    "query": "Ataque de pânico é um transtorno mental por si só?",
+    "expected_sources": [
+      "DSM-F410-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 1,
+          "similarity": 0.705344136798917
+        },
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 2,
+          "similarity": 0.613978440274448
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 3,
+          "similarity": 0.593598136614977
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 4,
+          "similarity": 0.570361443801135
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 5,
+          "similarity": 0.561125786606446
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Um ataque de pânico é definido como um surto abrupto de medo ou desconforto intenso que alcança um pico em minutos.",
+          "evidence_status": "supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F410-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos"
+            }
+          ]
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Se o ataque de pânico é classificado como um transtorno mental por si só",
+          "reason": "O contexto clínico fornecido descreve os critérios e a definição de um ataque de pânico, mas não possui informações ou afirmações sobre se ele constitui ou não um transtorno mental independente por si só."
+        }
+      ],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 1,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Um ataque de pânico é definido como um surto abrupto de medo ou desconforto intenso que alcança um pico em minutos.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  },
+  {
+    "case_id": "E2E-HRD-005",
+    "type": "HARD_CONTRADICTORY",
+    "query": "Transtorno bipolar tipo I e episódios depressivos.",
+    "expected_sources": [
+      "DSM-F31-CRIT",
+      "DSM-F32-CRIT"
+    ],
+    "retrieval": {
+      "status": "PASS",
+      "returned_chunks": [
+        {
+          "chunk_id": "DSM-F31-CRIT",
+          "rank": 1,
+          "similarity": 0.703940272331318
+        },
+        {
+          "chunk_id": "DSM-F410-CRIT",
+          "rank": 2,
+          "similarity": 0.578512276499782
+        },
+        {
+          "chunk_id": "DSM-F32-CRIT",
+          "rank": 3,
+          "similarity": 0.568504368601671
+        },
+        {
+          "chunk_id": "DSM-F411-CRIT",
+          "rank": 4,
+          "similarity": 0.530790952993025
+        },
+        {
+          "chunk_id": "DSM-F400-CRIT",
+          "rank": 5,
+          "similarity": 0.521218131526521
+        }
+      ]
+    },
+    "context_injected": "<source chunk_id=\"DSM-F31-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F31\" category=\"criteria\">\nCONTENT:\nCritérios para Episódio Maníaco: Um período distinto de humor anormal e persistentemente elevado, expansivo ou irritável e aumento anormal e persistente da atividade dirigida a objetivos ou da energia, durando pelo menos uma semana e presente na maior parte do dia, quase todos os dias.\n</source>\n\n<source chunk_id=\"DSM-F410-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.0\" category=\"criteria\">\nCONTENT:\nAtaques de pânico inesperados e recorrentes. Um ataque de pânico é um surto abrupto de medo intenso ou desconforto intenso que alcança um pico em minutos, durante o qual ocorrem quatro (ou mais) dos seguintes sintomas: palpitações, sudorese, tremores, sensação de falta de ar, dor no peito, medo de morrer.\n</source>\n\n<source chunk_id=\"DSM-F32-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F32\" category=\"criteria\">\nCONTENT:\nCinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer.\n</source>\n\n<source chunk_id=\"DSM-F411-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F41.1\" category=\"criteria\">\nCONTENT:\nAnsiedade e preocupação excessivas (expectativa apreensiva), ocorrendo na maioria dos dias por pelo menos seis meses, com diversos eventos ou atividades. O indivíduo considera difícil controlar a preocupação.\n</source>\n\n<source chunk_id=\"DSM-F400-CRIT\" source_authority=\"DSM-5-TR\" source_version=\"2022_Text_Revision\" code=\"F40.0\" category=\"criteria\">\nCONTENT:\nMedo ou ansiedade acentuados acerca de duas (ou mais) das cinco situações seguintes: 1. Uso de transporte público. 2. Permanecer em espaços abertos. 3. Permanecer em locais fechados. 4. Permanecer em uma fila ou ficar em meio a uma multidão. 5. Sair de casa sozinho.\n</source>",
+    "generation": {
+      "evidence_chains": [
+        {
+          "claim": "Os episódios depressivos são caracterizados por cinco ou mais sintomas presentes durante o mesmo período de duas semanas, representando mudança no funcionamento, com pelo menos um dos sintomas sendo humor deprimido ou perda de interesse ou prazer.",
+          "evidence_status": "supported",
+          "supporting_evidence": [
+            {
+              "chunk_id": "DSM-F32-CRIT",
+              "source_authority": "DSM-5-TR",
+              "source_version": "2022_Text_Revision",
+              "exact_quote": "Cinco (ou mais) dos seguintes sintomas estiveram presentes durante o mesmo período de duas semanas e representam uma mudança em relação ao funcionamento anterior: pelo menos um dos sintomas é (1) humor deprimido ou (2) perda de interesse ou prazer."
+            }
+          ]
+        }
+      ],
+      "abstentions": [
+        {
+          "topic": "Transtorno bipolar tipo I",
+          "reason": "O contexto clínico fornecido não contém nenhuma menção direta ou critérios de diagnóstico para o 'Transtorno bipolar tipo I', impossibilitando estabelecer sua relação com os episódios depressivos."
+        }
+      ],
+      "meta": {
+        "total_claims": 1,
+        "supported_claims": 1,
+        "partially_supported_claims": 0,
+        "abstained_claims": 1
+      }
+    },
+    "claim_validations": [
+      {
+        "claim": "Os episódios depressivos são caracterizados por cinco ou mais sintomas presentes durante o mesmo período de duas semanas, representando mudança no funcionamento, com pelo menos um dos sintomas sendo humor deprimido ou perda de interesse ou prazer.",
+        "chunk_id_valid": true,
+        "exact_quote_valid": true,
+        "validation": "VALID"
+      }
+    ],
+    "abstention": {
+      "expected": false,
+      "observed": null,
+      "pass": null,
+      "reason": null
+    },
+    "human_evaluation_labels": {
+      "faithfulness_pass": null,
+      "attribution_pass": null,
+      "unsupported_claim_count": null,
+      "failure_types": []
+    }
+  }
+]
